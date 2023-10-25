@@ -1,0 +1,6 @@
+Makefile
+build/
+node_modules/
+*.env
+.git
+.gitignore
