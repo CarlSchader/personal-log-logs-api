@@ -22,5 +22,5 @@ kill-db:
 push-image:
 	gcloud auth configure-docker us-west1-docker.pkg.dev
 	docker build -t logs-api --platform linux/amd64 .
-	docker tag logs-api us-west1-docker.pkg.dev/personal-log-403105/logs-api/logs-api:${GIT_SHA}
-	docker push us-west1-docker.pkg.dev/personal-log-403105/logs-api/logs-api:${GIT_SHA}
+	docker tag logs-api us-west1-docker.pkg.dev/personal-log-403105/logs-api/${GIT_SHA}
+	docker push us-west1-docker.pkg.dev/personal-log-403105/logs-api/${GIT_SHA}
